@@ -1,0 +1,13 @@
+.LoginPage {
+    border: 2px solid red;
+    height: 50vh;
+    width: 30vw;
+    margin: 0 auto;
+    box-Shadow: 0 0 10px black;
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+
+}

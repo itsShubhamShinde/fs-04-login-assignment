@@ -1,19 +1,16 @@
 import React from 'react'
 import './Loginpage.css'
-import myContext from '../App'
+import myContext from '../Components/Context'
 import { useContext, useState } from 'react'
 
 const Login = () => {
-  const {setLogin} = useContext(myContext)
-  const [input, setInput] = useState("")
+  const {setLogin , setInput, input} = useContext(myContext)
   const [pass, setPass] = useState("")
   const checkfnc = ()=>{
-    if(input === "Shubham" && pass === "pass"){
-      console.log("input ", input);
-      console.log("pass ", pass);
+    if(input === "Shubham" && pass === "pass@123" || input === "admin" && pass === "admin@123"){
       setLogin(true);
     }else{
-      console.log("Empty");
+      alert("Fill proper credential..!")
     }
   }
   return (

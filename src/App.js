@@ -6,10 +6,12 @@ import myContext from './Components/Context';
 import Navbar from './Components/Navbar';
 
 function App() {
-  const [login, setLogin] = useState(true)
+  const [login, setLogin] = useState(false)
+  const [input, setInput] = useState("")
+
  
   return (
-    <myContext.Provider value={{setLogin}}>
+    <myContext.Provider value={{setLogin , setInput , input}}>
 
       <div className="App">
         {

@@ -1,13 +1,16 @@
 import React from 'react'
 import './Loginpage.css'
-import myContext from '../Components/Context'
+import {myContext} from './DataProvider'
 import { useContext, useState } from 'react'
 
 const Login = () => {
   const {setLogin , setInput, input} = useContext(myContext)
   const [pass, setPass] = useState("")
+  
   const checkfnc = ()=>{
-    if(input === "Shubham" && pass === "pass@123" || input === "admin" && pass === "admin@123"){
+    console.log(input)
+    if((input === "Shubham" && pass === "pass@123") || (input === "admin" && pass === "admin@123")){
+      console.log(input)
       setLogin(true);
     }else{
       alert("Fill proper credential..!")
@@ -27,4 +30,4 @@ const Login = () => {
   )
 }
 
-export default Login
+export default Login;

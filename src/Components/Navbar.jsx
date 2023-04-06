@@ -1,6 +1,6 @@
 import React from 'react'
 import "./navbar.css"
-import myContext from './Context'
+import {myContext} from './DataProvider'
 import { useContext } from 'react'
 
 const Navbar = () => {
